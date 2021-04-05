@@ -1,0 +1,101 @@
+body {
+    font: 32 32px Helvetica, sens-serif;
+    text-transform: uppercase;
+    color: #000000;
+}
+.nav{
+    background: #000000;
+    margin: 0 0 210px;
+    padding: 3px;
+}
+.nav-list{
+    text-align: right;
+    padding: 0 60px;
+    margin: 0;
+}
+.nav-item{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 21px 0 25px;
+}
+.nav-item a {
+    display: block;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 30px 25px 29px 50px;
+}
+.nav-item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: -25px;
+    border-style: solid;
+    border-width: 0 0 48px 25px;
+    border-color: transparent transparent #ffffff transparent;
+}
+.nav-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 48px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+.nav-item a:after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-color: transparent transparent transparent #ffffff  ;
+    border-style: solid ;
+    border-width: 48px 0 48px 25px;
+    position: absolute;
+    top: 0;
+    right: -25px;
+}
+
+.nav-item:hover a {
+    background-color: #cccccc;
+}
+.gradient .nav-item:hover a {
+    background-color: #fff;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.nav-item:hover a:after {
+    border-color: transparent transparent transparent #cccccc;
+    position: absolute;
+}
+.nav-item:hover:after {
+    border-color: transparent #cccccc transparent transparent;
+    cursor: pointer;
+}
+.nav-item:hover:before {
+    border-color: transparent transparent #cccccc transparent;
+    cursor: pointer;
+}
+
+.gradient .nav-item:hover a:after {
+    border-color: transparent transparent transparent #ffffff  ;
+    border-style: solid ;
+}
+
+.gradient .nav-item:hover:after {
+    border-color: transparent rgba(255,255,255,0.7) transparent transparent;
+}
+.gradient .nav-item:hover:before {
+    border-color: transparent transparent rgba(255,255,255,0.7) transparent;
+}
+
+
+.gradient {
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+}
